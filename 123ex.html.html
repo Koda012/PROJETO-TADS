@@ -2,52 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stickyyblack</title>
     <link rel="stylesheet" href="Estilo.CSS">
+    <style> 
+    .section {
+        margin-bottom: 30px;
+        overflow: hidden; /* Para corrigir o comportamento de flutuação */
+    }
+    .image-with-title {
+            display: flex;
+            align-items: left;
+        }
+    p {
+        color: white;
+    }   
+
+
+</style>
 </head>
 <body>
-    <header>
-        <h1>Stickyguy</h1>
-    </header>
+    <header> <a href="123ex.html.html"> <img src="imagens/Screenshot_6.png">
+    </a> 
     <nav>
         <ul>
-            <a href="#home">Home</a>&nbsp;
-            <a href="#quem-somos">Quem Somos</a>&nbsp;
-            <a href="#o-jogo">O Jogo</a>&nbsp;
-            <a href="#contato">Contato</a>&nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#quem-somos">Quem Somos</a>
+            </li>
+            <li>
+                <a href="#o-jogo">O Jogo</a>
+            </li>
+            <li>
+                <a href="#contato">Contato</a>
+            </li>
+    
         </ul>
     </nav>
+</header>
+    
+</h1>    
     <main>
+        <p></p>
+        <img src="imagens/IMAGEMJOGO.png">
+        <video width="400" height="300" controls>
+            <source src=".mp4" type="video/mp4">
+        </video>
         <section id="home">
-            <h2>Stickyguy</h2>
-            <p> Sticky guy só quer ser feliz e para isso tera q passar por desafios pessimos </p>
-			<h2><strong>Ficha tecnica</strong></h2>
-			<p> Engine Construct 3</p>
-			<p> Plataforma PC</p>	
-			<p>Mecânica (luta, Plataforma e Top-Down)</p>
-			<p>Dispositivos de entrada (mouse e teclado)</p>
-			<h2>Personagens</h2>
-			<p>Sticky: O herói da trama</p>
-			<p>Normal men</p>
-			<p>jams: gosmas</p>
-			<h2>Elementos</h2>
-			<p>Elementos Especiais: soco de roubado</p>
-			<h2>Regras do jogo</h2>
-			<p>derrote normal men</p>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="card">
+                        <h3>Stickyguy</h3>
+                        <p>Sticky guy só quer ser feliz e para isso tera q passar por desafios para salvar sua amada sticky girl, usando o olho do tempo sticky pode voltar ao inicio do dia ao ser derrotado</p>
+                    </div>
+                    <div class="card">
+                        <h3>Ficha tecnica</h3>
+                        <p> Engine Construct 3</p>
+                        <p> Plataforma PC</p>	
+                        <p>Mecânica (no hit, Plataforma e Top-Down)</p>
+                        <p>Dispositivos de entrada (teclado)</p>
+                    </div>
+                    <div class="card">
+                        <h3>Personagens</h3>
+                        <p>Sticky: Para ter uma vida de paz Sticky busca salvar sua namorada do normal men</p>
+                        <p>Normal men: apos destruir parte do mundo, ele transforma a namorada de sticky em pedra</p>
+                        <p>jams: lacaios de normal men</p>
+                    </div>
+                    <div class="card">
+                        <h3>Regras do jogo</h3>
+                        <p>derrote normal men</p>
+                        <p>sem ser atingido pelos seus capangas</p>
+                    </div>
+                </div>
+            </div>
+            <script src="javaScript.js"></script>
         </section>
         <section id="quem-somos">
             <h2>Conheça mais sobre nós</h2>
-            <p1> Nos somos o grupo 5 e estamos criando um jogo</p1>
+            <p> Nos a Empresa criadora de Sticky guy, somos apaixonados por criar experiências de jogo únicas que cativam, desafiam</p> <p> e inspiram jogadores de todo o mundo. Como uma equipe de desenvolvimento indie dedicada, </p> <p>estamos comprometidos em explorar novas ideias, narrativas envolventes e mecânicas inovadoras.</p>
 
         </section>
         <section id="o-jogo">
        <h2><s>O Jogo</s></h2>
-       <a href="https://www.instagram.com/_koji_n/"><img src="imagens/91b51d71-7405-4493-a584-3c6ce665e77f.png"></a>     
+       <iframe src=jogo/projeto.c3p width="1000" height="600">  </iframe>   
        
         </section>
         <section id="contato">
@@ -66,7 +104,7 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.5149559462493!2d-52.38314662519066!3d-24.04816387846836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed7540659ea6d1%3A0x1375c0952b412abd!2sAv.%20Irm%C3%A3os%20Pereira%2C%20670%20-%20Centro%2C%20Campo%20Mour%C3%A3o%20-%20PR%2C%2087300-010!5e0!3m2!1spt-BR!2sbr!4v1706226583758!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
-        <p>&copy; O jogo</p>
+        <p>&copy; Koji'sentreiteiment</p>
     </footer>
 </body>
 </html>

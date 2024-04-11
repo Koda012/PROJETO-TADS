@@ -1,7 +1,7 @@
 section {
     padding: 20px;
     margin: 50px 0;
-    background-color: #fcf9f9;
+    background-color: rgb(59, 59, 59);
 }
 
 body {
@@ -9,29 +9,39 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #6d6d6d;
+    background-color: #4b4a4a;
 }
 img {
-    text-align: center;
+    text-align: left;
 }
 header {
-    background-color: #50504f;
-    color: white;
+    background-color: #1b1b1b;
+    color: rgb(78, 77, 77);
     padding: 10px;
-    text-align: left; 
-    border-bottom: 2px solid #666;
+    box-shadow: #ccc;
+}
+header img {
+    text-align: left;
 }
 
-nav {
-    background-color: #666;
-    padding: 10px;
-    text-align: right;
-    border-bottom: 2px solid #333;
+header nav {
+    float: none;
+}
+header nav ul {
+    list-style: none;
+}
+header nav ul li {
+   display: inline-block;
+   margin: 25px;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
 }
 section {
     padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
 }
 
 img {
@@ -45,5 +55,62 @@ width: 30px;
 height: auto; 
 }
 h1 {
-font-family:cursive;
+text-align: left;
+    font-family:cursive;
+color: white;
+}
+header img {
+    text-align: left;
+    width: 200px;
+}  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #161515;
+}
+
+.carousel-container {
+    width: 40%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card {
+    flex: 0 0 50%; /* Largura fixa dos cards (50% do contêiner) */
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombreamento suave */
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Plano de fundo personalizado para os cards */
+.card:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+video {
+    width: 50%;
+    text-align: center;
+    max-width: 385px;
+    margin: 0 auto;
+    display: block;
 }
