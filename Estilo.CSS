@@ -1,74 +1,86 @@
-section {
-    padding: 20px;
-    margin: 50px 0;
-    background-color: rgb(59, 59, 59);
-}
-
+/* Estilos gerais para o body e header */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: #4b4a4a;
+    color: rgb(8, 8, 8);
 }
-img {
-    text-align: left;
-}
+
 header {
     background-color: #1b1b1b;
     color: rgb(78, 77, 77);
     padding: 10px;
-    box-shadow: #ccc;
-}
-header img {
-    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para a navegação no header */
 header nav {
-    float: none;
+    text-align: center;
 }
+
 header nav ul {
     list-style: none;
+    padding: 0;
 }
+
 header nav ul li {
-   display: inline-block;
-   margin: 25px;
-   text-transform: uppercase;
-   font-weight: bold;
+    display: inline-block;
+    margin: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
+
 header nav ul li a {
     text-decoration: none;
     color: white;
 }
+
+/* Estilos para seções */
 section {
     padding: 20px;
+    margin: 50px 0;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilos para imagens */
 img {
-        width: 20%;
-    }
-A {
-        width: 5%;
+    width: 300px; /* Ajusta a largura da imagem para ocupar toda a largura do contêiner */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+.header img {
+    width: 500px; 
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .imagem-link {
-width: 30px; 
-height: auto; 
+    width: 20px;
+    height: auto;
 }
+.imagem-game {
+    width: 100%;
+    height: auto;
+}
+body header a {
+    width: 100%;
+}
+
 h1 {
-text-align: left;
-    font-family:cursive;
-color: white;
-}
-header img {
     text-align: left;
-    width: 200px;
-}  
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #161515;
+    font-family: cursive;
+    color: rgb(0, 0, 0);
 }
+
 
 .carousel-container {
     width: 40%;
@@ -83,34 +95,53 @@ body {
 }
 
 .card {
-    flex: 0 0 50%; /* Largura fixa dos cards (50% do contêiner) */
+    flex: 0 0 50%;
     box-sizing: border-box;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombreamento suave */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
 .card h3 {
+    color:#000000;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
 .card p {
     font-size: 16px;
-    color: #666;
+    color: #000000;
     line-height: 1.5;
     margin-bottom: 0;
 }
 
-/* Plano de fundo personalizado para os cards */
 .card:nth-child(odd) {
     background-color: #f8f8f8;
 }
+
 video {
-    width: 50%;
-    text-align: center;
+    width: 100%;
     max-width: 385px;
-    margin: 0 auto;
+    height: auto;
     display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    header img {
+        width: 150px;
+    }
+
+    header nav ul li {
+        margin: 15px;
+    }
+
+    .card {
+        flex: 0 0 100%;
+    }
+
+    .carousel-container {
+        width: 100%;
+    }
 }

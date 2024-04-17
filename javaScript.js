@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const track = document.querySelector('.carousel-track');
     const cards = Array.from(document.querySelectorAll('.card'));
-    const cardWidth = cards[0].getBoundingClientRect().width * 2; // Largura de 2 cards
+    const cardWidth = cards[0].getBoundingClientRect().width * 1; 
 
     let currentIndex = 0;
 
@@ -25,8 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         setTrackPosition();
     }
-
-    // Controle de navegação do carrossel
     const prevBtn = document.createElement('button');
     prevBtn.textContent = 'Anterior';
     prevBtn.addEventListener('click', prevCards);
@@ -42,6 +40,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelector('.carousel-container').appendChild(controlsContainer);
 
-    // Inicializa o carrossel na primeira posição
     setTrackPosition();
 });

@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Stickyyblack</title>
+    <title>Stickyboy</title>
     <link rel="stylesheet" href="Estilo.CSS">
     <style> 
     .section {
         margin-bottom: 30px;
-        overflow: hidden; /* Para corrigir o comportamento de flutuação */
+        overflow: hidden; 
     }
     .image-with-title {
             display: flex;
@@ -16,12 +16,20 @@
     p {
         color: white;
     }   
-
+    .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
 
 </style>
 </head>
+<link rel="shortcut icon" href="imagens/pixil-frame.png">
 <body>
-    <header> <a href="123ex.html.html"> <img src="imagens/Screenshot_6.png">
+    <header> <a href="home"> <img src="imagens/Screenshot_6.png">
     </a> 
     <nav>
         <ul>
@@ -44,12 +52,11 @@
     
 </h1>    
     <main>
-        <p></p>
-        <img src="imagens/IMAGEMJOGO.png">
-        <video width="400" height="300" controls>
-            <source src=".mp4" type="video/mp4">
+        <p>
+        <img src="imagens/IMAGEMJOGO.png"  class="imagem-game"></p>
+
         </video>
-        <section id="home">
+        <section id="quem-somos">
             <div class="carousel-container">
                 <div class="carousel-track">
                     <div class="card">
@@ -58,21 +65,21 @@
                     </div>
                     <div class="card">
                         <h3>Ficha tecnica</h3>
-                        <p> Engine Construct 3</p>
-                        <p> Plataforma PC</p>	
-                        <p>Mecânica (no hit, Plataforma e Top-Down)</p>
-                        <p>Dispositivos de entrada (teclado)</p>
+                        <p> Engine: Construct 3</p>
+                        <p> Plataforma: PC</p>	
+                        <p>Mecânica: no hit e Plataforma</p>
+                        <p>Dispositivos de entrada: teclado</p>
                     </div>
                     <div class="card">
                         <h3>Personagens</h3>
                         <p>Sticky: Para ter uma vida de paz Sticky busca salvar sua namorada do normal men</p>
                         <p>Normal men: apos destruir parte do mundo, ele transforma a namorada de sticky em pedra</p>
-                        <p>jams: lacaios de normal men</p>
+                        <p>smile faces: lacaios de normal men</p>
                     </div>
                     <div class="card">
                         <h3>Regras do jogo</h3>
-                        <p>derrote normal men</p>
-                        <p>sem ser atingido pelos seus capangas</p>
+                        <p>Derrote normal men
+                        sem ser atingido pelos seus capangas</p>
                     </div>
                 </div>
             </div>
@@ -80,19 +87,18 @@
         </section>
         <section id="quem-somos">
             <h2>Conheça mais sobre nós</h2>
-            <p> Nos a Empresa criadora de Sticky guy, somos apaixonados por criar experiências de jogo únicas que cativam, desafiam</p> <p> e inspiram jogadores de todo o mundo. Como uma equipe de desenvolvimento indie dedicada, </p> <p>estamos comprometidos em explorar novas ideias, narrativas envolventes e mecânicas inovadoras.</p>
+            <p>Empresa criadora de Sticky guy, nós somos apaixonados por criar experiências de jogo únicas que cativam, desafiam<br> e no intuito de inspirar jogadores de todo o mundo. Como uma equipe de desenvolvimento indie dedicada, <br>estamos comprometidos em explorar novas ideias, narrativas envolventes e mecânicas inovadoras.</p>
 
         </section>
         <section id="o-jogo">
-       <h2><s>O Jogo</s></h2>
-       <iframe src=jogo/projeto.c3p width="1000" height="600">  </iframe>   
-       
+       <h2><s></s></h2>
+       <iframe width="1000" height="600" src="jogo/index.html"></iframe>  
+       <p> <a href="jogo/index.html" class="button" target="_blank"> jogar</a> <p> 
         </section>
         <section id="contato">
             <h2>Entre em contato</h2>
-            <p>Você pode entrar em contato conosco através do Instagram ou preenchendo o formulário abaixo:</p>    
-            <p>Visite nosso <a href="https://www.instagram.com/_koji_n/">
-                  <img src="imagens/instagram-geb58aa101_1280-1010x1024.png" class="imagem-link"></a>.</p>
+            <p>Você pode entrar em contato conosco preenchendo<br> o formulário abaixo ou visite nossas redes sociais no link.</p> <p> <a href="https://www.instagram.com/_koji_n/">
+                <img src="imagens/instagram-geb58aa101_1280-1010x1024.png" class="imagem-link"></a></p>
             <form action="enviar_email.php" method="POST">
                 <label for="email">Email:</label><br>
                 <input type="email" id="email" name="email"><br>
@@ -100,6 +106,11 @@
                 <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br>
                 <input type="submit" value="Enviar">
               </form>
+                <script>
+                        document.querySelector('.button').addEventListener('click', function() {
+                            alert('Redirecionando para o jogo');
+                        });
+                </script>
     </section>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.5149559462493!2d-52.38314662519066!3d-24.04816387846836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed7540659ea6d1%3A0x1375c0952b412abd!2sAv.%20Irm%C3%A3os%20Pereira%2C%20670%20-%20Centro%2C%20Campo%20Mour%C3%A3o%20-%20PR%2C%2087300-010!5e0!3m2!1spt-BR!2sbr!4v1706226583758!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
