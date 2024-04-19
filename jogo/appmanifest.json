@@ -3,7 +3,7 @@
 	"short_name": "projetotads",
 	"description": "",
 	"start_url": "index.html",
-	"display": "fullscreen",
+	"display": "standalone",
 	"orientation": "landscape",
 	"background_color": "#ffffff",
 	"icons": [

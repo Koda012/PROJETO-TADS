@@ -1,4 +1,4 @@
-/* Estilos gerais para o body e header */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,6 +8,7 @@ body {
     color: rgb(8, 8, 8);
 }
 
+
 header {
     background-color: #1b1b1b;
     color: rgb(78, 77, 77);
@@ -15,7 +16,7 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para a navegação no header */
+
 header nav {
     text-align: center;
 }
@@ -37,7 +38,6 @@ header nav ul li a {
     color: white;
 }
 
-/* Estilos para seções */
 section {
     padding: 20px;
     margin: 50px 0;
@@ -45,6 +45,15 @@ section {
     color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Estilos para seções */  
+
+body {
+    background-color: #1b1b1b;
+    background-image: url('imagens/telafundo.png');
+    background-size: cover; /* Para cobrir todo o background */
+    background-position: center; /* Posiciona a imagem no centro */
+    background-repeat: no-repeat; /* Evita repetições da imagem */
 }
 
 /* Estilos para imagens */
@@ -128,20 +137,25 @@ video {
     margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-    header img {
-        width: 150px;
-    }
-
-    header nav ul li {
-        margin: 15px;
-    }
+@media (max-width: 1000) {
+    
 
     .card {
-        flex: 0 0 100%;
-    }
+        flex: -10 -10 45%; 
+        padding: 10px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 
     .carousel-container {
-        width: 100%;
+        width: 80%; 
+        margin: 0 auto; 
     }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+}
 }
